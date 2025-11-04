@@ -10,9 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication extends SpringBootServletInitializer {
 
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/bello")
+    public String bello() {
         return "Bello from Spring Boot deployed on Tomcat!";
+    }
+    @GetMapping("/master")
+    public String master() {
+        return "master from Spring Boot deployed on Tomcat!";
     }
 
     public static void main(String[] args) {
