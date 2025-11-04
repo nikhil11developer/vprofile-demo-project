@@ -21,7 +21,7 @@ public class DemoApplication extends SpringBootServletInitializer {
     
     @GetMapping("/better")
     public String master() {
-        return "better from Spring Boot deployed on Tomcat!";
+        return "better 11 from Spring Boot deployed on Tomcat!";
     }
 
     public static void main(String[] args) {
