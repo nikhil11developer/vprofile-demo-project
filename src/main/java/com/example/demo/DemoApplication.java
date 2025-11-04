@@ -18,6 +18,11 @@ public class DemoApplication extends SpringBootServletInitializer {
     public String master() {
         return "master from Spring Boot deployed on Tomcat!";
     }
+    
+    @GetMapping("/better")
+    public String master() {
+        return "better from Spring Boot deployed on Tomcat!";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
